@@ -12,8 +12,6 @@ def fix_output(outdir, phenotype_lookup):
         outpath = broken_path.replace('.csv', '.fixed.csv')
         fixed_output = list()
         with open(broken_path, 'r') as f:
-            #sheetname = broken_path.split('\\')[-1].split('.results')[0].rsplit('_', 4)[0]
-            #sheet_phenotypes = phenotype_lookup[sheetname]
             #column_lookup can be edited depending on your data and desired outcome
             column_lookup = {'Number_pos_present_in': phenotype_lookup['1'] + ' ALT (rupture)',
                              'Number_neg_present_in': phenotype_lookup['0'] + ' ALT (no rupture)',
