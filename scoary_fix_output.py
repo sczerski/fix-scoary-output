@@ -57,5 +57,4 @@ if __name__ == '__main__':
     with open("C:\\rename_fqs_from_csv\\traits.csv", 'r') as t:
         reader = csv.reader(t)
         dict_from_csv = {rows[1]:rows[0] for rows in reader}
-        #print(dict_from_csv)
         fix_output(outdir, dict_from_csv)
